@@ -4,7 +4,7 @@ services:
 
 language: generic 
 before_install:
-  - docker build -f dockerfile.dev -t wicochandra/udemy-docker-react .
+  - docker build -f Dockerfile.dev -t wicochandra/udemy-docker-react .
 
 script:
   - docker run -e CI=true wicochandra/udemy-docker-react npm run test -- --coverage
